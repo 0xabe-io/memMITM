@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <Sspi.h> //Be sure to reference secur32.lib in Linker | Input | Additional Dependencies
 
-//Fix this, doesn't scale...
-
 FARPROC fpEncryptMessage; //Pointer To The Original Location
 BYTE bSavedByte; //Saved Byte Overwritten by 0xCC -
 
