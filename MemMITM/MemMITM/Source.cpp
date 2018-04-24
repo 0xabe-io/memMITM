@@ -16,8 +16,13 @@ BYTE bSavedByte2; //Saved Byte Overwritten by 0xCC -
 // Original Idea/Reference Blog Post Here:
 // https://0x00sec.org/t/user-mode-rootkits-iat-and-inline-hooking/1108
 // PoC by Casey Smith @subTee
+// From PowerShell
+// mavinject.exe $pid /INJECTRUNNING C:\AtomicTests\MemMITM.dll
+// curl https://www.example.com
+// Should Hook and Display Request/Response from HTTPS
 
-//OK
+
+
 
 BOOL WriteMemory(FARPROC fpFunc, LPCBYTE b, SIZE_T size) {
 	DWORD dwOldProt = 0;
